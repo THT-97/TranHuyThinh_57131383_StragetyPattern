@@ -5,10 +5,6 @@
  */
 package Bai1;
 
-import Bai1.ITinh;
-import Bai1.ITinh;
-import Bai1.ITinh;
-
 /**
  *
  * @author TranHuyThinh
