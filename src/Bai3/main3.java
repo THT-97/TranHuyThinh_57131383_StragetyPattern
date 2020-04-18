@@ -18,23 +18,22 @@ public class main3 {
      * @throws java.text.ParseException
      */
     public static void main(String[] args) throws ParseException {
-        
         SimpleDateFormat f = new SimpleDateFormat("dd-MM-yyyy"); //Dinh dang ngay
-        SinhVien s1 =  new SinhVien("Nguyen Van A", f.parse("01-12-2000"), 8.0f);
-        SinhVien s2 = new SinhVien("Le Thi B", f.parse("15-4-1999"), 5.0f);
-        SinhVien s3 = new SinhVien("Tran Van C", f.parse("25-7-2000"), 7.5f);
-        
+        SinhVien s1 =  new SinhVien("SV A", f.parse("01-12-2000"), 8.0f);
+        SinhVien s2 = new SinhVien("SV B", f.parse("15-4-1999"), 5.0f);
+        SinhVien s3 = new SinhVien("SV C", f.parse("25-7-2000"), 7.5f);
+        //Quan Ly
         QLSV dsSV = new QLSV();
         //Tao DS
         dsSV.them(s1);
         dsSV.them(s2);
         dsSV.them(s3);
         //Sap xep
-        System.out.println("Sap xep theo HoTen:");
+        System.out.println("SAP XEP THEO HoTen:");
         dsSV.setSoSanh(new soSanhTheoTen());
         dsSV.sapXep();
         dsSV.inDS();
-        System.out.println("\nSap xep theo Diem:");
+        System.out.println("\nSAP XEP THEO Diem:");
         dsSV.setSoSanh(new soSanhTheoDiem());
         dsSV.sapXep();
         dsSV.inDS();

@@ -24,7 +24,7 @@ public class GioHang {
     }
     
     public void themHH(HangHoa p){
-        this.dsHH.add(p);
+        dsHH.add(p);
     }
     
     public double ThanhToan(){

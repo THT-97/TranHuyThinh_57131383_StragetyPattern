@@ -11,15 +11,15 @@ import java.util.ArrayList;
  * @author TranHuyThinh
  */
 public class QLSV {
-    private ISoSanh<SinhVien> soSanh;
+    private ISoSanh sosanh;
     private ArrayList<SinhVien> ds;
 
     public QLSV() {
         ds = new ArrayList<>();
     }
 
-    public void setSoSanh(ISoSanh<SinhVien> soSanh) {
-        this.soSanh = soSanh;
+    public void setSoSanh(ISoSanh sosanh) {
+        this.sosanh = sosanh;
     }
     
     public void them(SinhVien sv){
@@ -31,7 +31,8 @@ public class QLSV {
         SinhVien temp;
         for (int i = 0; i < l-1; i++) {
             for (int j = i+1; j < l; j++) {
-                if(soSanh.soSanh(ds.get(i), ds.get(j))>0){ //swap
+                if(sosanh.soSanh(ds.get(i), ds.get(j))>0){
+                    //swap
                     temp = ds.get(i);
                     ds.set(i, ds.get(j));
                     ds.set(j, temp);
@@ -41,7 +42,7 @@ public class QLSV {
     }
     
     public void inDS(){
-        System.out.println("Ho ten" +"\t\t"+ "Ngay sinh" +"\t"+ "DTB");
+        System.out.println("Ho ten" +"\t"+ "Ngay sinh" +"\t"+ "DTB");
         for (int i = 0; i < ds.size(); i++) {
             ds.get(i).inTT();
         }

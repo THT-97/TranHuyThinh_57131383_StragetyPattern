@@ -25,7 +25,7 @@ public class main2 {
         ghOnline.setThanhToan(new ThanhToanOnline());
         ghOnline.themHH(p2);
         ghOnline.themHH(p3);
-        System.out.println("Thanh toan online");
+        System.out.println("THANH TOAN ONLINE");
         ghOnline.inDS();
         System.out.println("So tien thanh toan: " + ghOnline.ThanhToan());
         
@@ -33,7 +33,7 @@ public class main2 {
         ghCOD.setThanhToan(new ThanhToanCOD());
         ghCOD.themHH(p1);
         ghCOD.themHH(p3);
-        System.out.println("\nThanh toan COD");
+        System.out.println("\nTHANH TOAN COD");
         ghCOD.inDS();
         System.out.println("So tien thanh toan: " + ghCOD.ThanhToan());
     }

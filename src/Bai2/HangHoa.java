@@ -33,6 +33,6 @@ public class HangHoa {
     }
 
     public void ThongTin(){
-        System.out.println(this.getTenHH() +"\t"+ this.getMoTa() +"\t"+ this.getGia());
+        System.out.println(tenHH +"\t"+ moTa +"\t"+ gia);
     }
 }

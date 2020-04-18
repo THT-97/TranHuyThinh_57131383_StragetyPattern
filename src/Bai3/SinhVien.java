@@ -34,10 +34,10 @@ public class SinhVien {
     public float getDiemTB() {
         return diemTB;
     }
- 
+    
     public void inTT(){
         SimpleDateFormat f = new SimpleDateFormat("dd-MM-yyyy");
-        String strD = f.format(this.ngaySinh);
-        System.out.println(this.getHoTen() +"\t"+ strD +"\t"+ this.getDiemTB());
+        String strD = f.format(ngaySinh); //chuyen doi Date->String
+        System.out.println(hoTen +"\t"+ strD +"\t"+ diemTB);
     }
 }
